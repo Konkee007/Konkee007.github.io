@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="moments_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/myloverv5.png">
+    <title>Our Memories 😘</title>
+</head>
+<body>
+    <audio id="city" src="/audios/city_ThreeManDown.mp3"></audio>
+    <audio id="citycut" src="/audios/city_ThreeManDown_Cut.mp3"></audio>
+    <div id="preloader">
+        <div class="loader"></div>
+        <div class="loading-text">Loading</div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="percentage" id="percentage">0%</div>
+    </div>
+    <div id="preload-container"></div>
+    <div class="orientation-warning" id="orientationwarning">
+        <div class="phone-icon">📱🔄</div>
+        <h2>Please rotate your phone to Landscape for better experience</h2>
+    </div>
+    <div id="text-display"></div>
+    <div class="tv-close-overlay" id="tvcloseoverlay">
+        <div class="tv-close-top" id="close-top"></div>
+        <div class="tv-close-bottom" id="close-bottom"></div>
+    </div>
+    <div class="preintro-container" id="preintrocontainer">
+        <h1 class="pretext1" id="preintrotext-text1">อันนี้เค้าตั้งใจทำมากเลยนะคับ</h1>
+        <h1 class="pretext2" id="preintrotext-text2">เค้าก็ไม่รู้ทำไมเค้าไม่ไปตัดคลิปแทน</h1>
+        <h1 class="pretext3" id="preintrotext-text3">แต่เค้าอยากทำให้อ้วนแบบนี้มากกว่าอะคับบบ 🥺</h1>
+        <h1 class="pretext4" id="preintrotext-text4">อ้วนน้ำตาซึมแน่อิอิ (หรืออาจจะยัง 5555)</h1>
+        <h1 class="pretext5" id="preintrotext-text5">ไปดูกันดีกว่าอ้วน 🥰🥰😘</h1>
+    </div>
+    <div class="moment-container" id="momentcontainer">
+        <h1 class="moment-container-text" id="momentcontainertext" >M</h1>
+        <div class="moment-image-container" id="momentimagecontainer">
+
+        </div>
+        <h2 class="lyrics-text" id="lyricstext" >ข้างกัน Feat.เอิ๊ต ภัทรวี - Three Man Down (Acoustic version)<br><span style="opacity: 0;">Song</h2>
+    </div>
+
+    <div class="image-container" id="imagescontainer">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_1.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_2.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_3.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_4.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_5.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_6.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_7.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_8.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_9.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_10.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_11.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_12.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_13.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_14.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251001_15.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251222_16.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251222_17.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251222_18.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251222_19.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251222_20.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251222_21.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251222_22.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_251222_23.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_24.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_25.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_26.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_27.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_28.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_29.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_30.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_31.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_32.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_33.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_34.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_35.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_36.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_37.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_38.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_39.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_40.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_41.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_42.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_43.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_44.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_45.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_46.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_47.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_48.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_49.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_50.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_51.jpg" class="floating-image">
+        <img src="/Images/LINE_ALBUM_Love archive ❤️_260101_52.jpg" class="floating-image">
+    </div>
+
+    <div class="hearts-container" id="heartscontainer">
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+        <div class="heart" id="heart">💗</div>
+    </div>
+
+    <script src="moments.js">
+    </script>
+</body>
+</html>
