@@ -93,7 +93,6 @@ async function runMoment() {
     pretext5.classList.remove("active");
     await wait(2000)
     const momentContainer = document.getElementById("momentcontainer");
-    const city = document.getElementById("city");
     const lyricstext = document.getElementById("lyricstext");
     const container = document.getElementById("momentimagecontainer");
     const momentContainerText = document.getElementById("momentcontainertext");
@@ -111,9 +110,17 @@ async function runMoment() {
             }   
         }, 100);
     },800);
+    
+    const audioPlayer = document.getElementById("audioPlayer");
+    const source = document.getElementById("audioSource");
+    const song1 = "/audios/city_ThreeManDown.MP3";
+    const song2 = "/audios/city_ThreeManDown_Cut.MP3";
 
-    city.play()
-    city.volume = 1
+
+    source.src = song1;
+    audioPlayer.load()
+    audioPlayer.play()
+    audioPlayer.volume = 1
 
     
     let currentIndex = 0;
@@ -586,9 +593,10 @@ async function runMoment() {
         }, 20000);
     },24000);
     
-    const citycut = document.getElementById("citycut")
-    citycut.play()
-    citycut.volume = 1
+    source.src = song2;
+    audioPlayer.load()
+    audioPlayer.play()
+    audioPlayer.volume = 1
 
     const messages = [
         "<span style='background: linear-gradient(180deg, rgb(245, 134, 134), rgb(238, 95, 190)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent'>ยังไม่จบนะอ้วนนนนนอิอิ</span>",
