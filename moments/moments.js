@@ -90,6 +90,10 @@ async function runMoment() {
     await wait(500)
     pretext5.classList.add("active");
     await wait(5000)
+    const audioPlayer = document.getElementById("audioPlayer");
+    const source = document.getElementById("audioSource");
+    const song1 = "/audios/city_ThreeManDown.MP3";
+    const song2 = "/audios/city_ThreeManDown_Cut.MP3";
     pretext5.classList.remove("active");
     await wait(2000)
     const momentContainer = document.getElementById("momentcontainer");
@@ -110,11 +114,7 @@ async function runMoment() {
             }   
         }, 100);
     },800);
-    
-    const audioPlayer = document.getElementById("audioPlayer");
-    const source = document.getElementById("audioSource");
-    const song1 = "/audios/city_ThreeManDown.MP3";
-    const song2 = "/audios/city_ThreeManDown_Cut.MP3";
+
 
 
     source.src = song1;
@@ -163,6 +163,11 @@ async function runMoment() {
         }
     }
     await wait(500)
+    if (!audioPlayer.paused) {
+        console.log("เพลงกำลังเล่นอยู่");
+    } else {
+        console.log("เพลงหยุดอยู่");
+    }
     lyricstext.style.transition = "opacity 2s ease-in-out";
     lyricstext.style.opacity = 1;
     await wait(2500)
