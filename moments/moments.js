@@ -722,12 +722,29 @@ function loadVideo(src) {
     });
 }
 
+function loadAudio(src) {
+    return new Promise((resolve) => {
+        const audio = new Audio();
+        audio.oncanplaythrough = () => {
+            updateProgress(src);
+            resolve();
+        };
+        audio.onerror = () => {
+            updateProgress(src + " (Failed)");
+            resolve();
+        };
+        audio.src = src;
+        audio.load();
+    });
+}
+
 async function preloadAll() {
     const promises = mediaList.map(item => {
         const src = item.src || item;
         const type = item.type || "image";
         if (type === "image") return loadImage(src);
         if (type === "video") return loadVideo(src);
+        if (type === "audio") return loadAudio(src);
         return loadImage(src);
     });
     await Promise.all(promises);
