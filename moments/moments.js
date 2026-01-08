@@ -92,8 +92,8 @@ async function runMoment() {
     await wait(5000)
     const audioPlayer = document.getElementById("audioPlayer");
     const source = document.getElementById("audioSource");
-    const song1 = "/audios/city_ThreeManDown.MP3";
-    const song2 = "/audios/city_ThreeManDown_Cut.MP3";
+    const song1 = "/audios/city_ThreeManDown.mp3";
+    const song2 = "/audios/city_ThreeManDown_Cut.mp3";
     pretext5.classList.remove("active");
     await wait(2000)
     const momentContainer = document.getElementById("momentcontainer");
